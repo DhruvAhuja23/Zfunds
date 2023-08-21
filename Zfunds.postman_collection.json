@@ -1,0 +1,819 @@
+{
+	"info": {
+		"_postman_id": "e5c73170-5bcc-4fac-a006-d6488ead3516",
+		"name": "Zfunds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24406914"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"item": [
+				{
+					"name": "Advisor Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Dhruv\",\n    \"mobile\": \"7011824603\",\n    \"role\":\"advisor\",\n    \"otp\": \"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/advisor/signup/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advisor",
+								"signup",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Advisor Signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Dhruv\",\n    \"mobile\": \"701182460113\",\n    \"otp\": \"12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/advisor/signup/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"advisor",
+										"signup",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 21 Aug 2023 17:47:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.8.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "232"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"res_status\": \"success\",\n    \"status\": 201,\n    \"message\": \"Advisor account created successfully.\",\n    \"errors\": [],\n    \"data\": {\n        \"user\": {\n            \"id\": 15,\n            \"name\": \"Dhruv\",\n            \"mobile\": \"701182460113\",\n            \"role\": \"advisor\"\n        },\n        \"token\": \"48f770d232f646c4584bd6626facae70500ea5af\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "User Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Dhruv\",\n    \"mobile\": \"7011824603\",\n    \"role\":\"advisor\",\n    \"otp\": \"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/advisor/signup/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advisor",
+								"signup",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Dhruv\",\n    \"mobile\": \"70118246092\",\n    \"otp\": \"12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/user/signup/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"signup",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 21 Aug 2023 17:47:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.8.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "225"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"res_status\": \"success\",\n    \"status\": 201,\n    \"message\": \"User account created successfully.\",\n    \"errors\": [],\n    \"data\": {\n        \"user\": {\n            \"id\": 14,\n            \"name\": \"Dhruv\",\n            \"mobile\": \"70118246092\",\n            \"role\": \"user\"\n        },\n        \"token\": \"7dca501aabd433ea211825fe5531f172012b3e43\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Advisor Add Client",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token bb796336e752db2ab3b4987ad9deef46b78523a3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"Dhruv\",\n        \"mobile\": \"98765432107\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/advisor/add_client/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advisor",
+								"add_client",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Advisor Add Client",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token bb796336e752db2ab3b4987ad9deef46b78523a3",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Dhruv\",\n        \"mobile\": \"98765432107\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/advisor/add_client/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"advisor",
+										"add_client",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 21 Aug 2023 13:57:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.8.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "167"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"res_status\": \"success\",\n    \"status\": 201,\n    \"message\": \"Client added successfully.\",\n    \"errors\": [],\n    \"data\": {\n        \"client\": {\n            \"id\": 9,\n            \"name\": \"Dhruv\",\n            \"mobile\": \"98765432107\",\n            \"role\": \"user\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "All Clients",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token bb796336e752db2ab3b4987ad9deef46b78523a3",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/v1/advisor/clients/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"advisor",
+								"clients",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "All Clients",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token bb796336e752db2ab3b4987ad9deef46b78523a3",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/advisor/clients/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"advisor",
+										"clients",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 21 Aug 2023 18:08:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.8.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "376"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"res_status\": \"success\",\n    \"status\": 200,\n    \"message\": \"\",\n    \"errors\": [],\n    \"data\": [\n        {\n            \"id\": 4,\n            \"name\": \"Dhruv\",\n            \"mobile\": \"9876543210\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Dhruv\",\n            \"mobile\": \"98765432101\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Dhruv\",\n            \"mobile\": \"987654321012\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Dhruv\",\n            \"mobile\": \"98765432102\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Dhruv\",\n            \"mobile\": \"98765432107\",\n            \"role\": \"user\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token bb796336e752db2ab3b4987ad9deef46b78523a3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\" : \"Stock\",\n    \"name\": \"Jio\",\n    \"description\": \"Hello!!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/admin-products/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin-products",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 48f770d232f646c4584bd6626facae70500ea5af",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"category\" : \"Stock\",\n    \"name\": \"Jio\",\n    \"description\": \"Hello!!\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/admin-products/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin-products",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 21 Aug 2023 18:17:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.8.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "220"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"res_status\": \"success\",\n    \"status\": 201,\n    \"message\": \"\",\n    \"errors\": [],\n    \"data\": {\n        \"id\": 5,\n        \"category\": \"Stock\",\n        \"created_at\": \"2023-08-21T18:17:24.092853Z\",\n        \"updated_at\": \"2023-08-21T18:17:24.092876Z\",\n        \"name\": \"Jio\",\n        \"description\": \"Hello!!\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 48f770d232f646c4584bd6626facae70500ea5af",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/v1/admin-products/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin-products",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token bb796336e752db2ab3b4987ad9deef46b78523a3",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/admin-products/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin-products",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 21 Aug 2023 18:16:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.8.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "675"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"res_status\": \"success\",\n    \"status\": 200,\n    \"message\": \"\",\n    \"errors\": [],\n    \"data\": [\n        {\n            \"id\": 1,\n            \"category\": \"Stock\",\n            \"created_at\": \"2023-08-21T17:54:26.089642Z\",\n            \"updated_at\": \"2023-08-21T17:54:26.089672Z\",\n            \"name\": \"Jio\",\n            \"description\": \"Hello!!\"\n        },\n        {\n            \"id\": 2,\n            \"category\": \"Stock\",\n            \"created_at\": \"2023-08-21T18:00:03.023759Z\",\n            \"updated_at\": \"2023-08-21T18:00:03.023780Z\",\n            \"name\": \"Jio\",\n            \"description\": \"Hello!!\"\n        },\n        {\n            \"id\": 3,\n            \"category\": \"Stock\",\n            \"created_at\": \"2023-08-21T18:07:09.266564Z\",\n            \"updated_at\": \"2023-08-21T18:07:09.266594Z\",\n            \"name\": \"Jio\",\n            \"description\": \"Hello!!\"\n        },\n        {\n            \"id\": 4,\n            \"category\": \"Stock\",\n            \"created_at\": \"2023-08-21T18:07:20.437259Z\",\n            \"updated_at\": \"2023-08-21T18:07:20.437279Z\",\n            \"name\": \"Jio\",\n            \"description\": \"Hello!!\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Purchase Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 48f770d232f646c4584bd6626facae70500ea5af",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"user_id\": 7,\n   \"product_id\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/purchase-products/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"purchase-products",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Purchase Product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 48f770d232f646c4584bd6626facae70500ea5af",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"user_id\": 7,\n   \"product_id\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/purchase-products/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"purchase-products",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 21 Aug 2023 18:33:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.8.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "123"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"res_status\": \"success\",\n    \"status\": 201,\n    \"message\": \"\",\n    \"errors\": [],\n    \"data\": {\n        \"user_id\": 7,\n        \"product_id\": 2,\n        \"link\": \"unique_link_7_2\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:8000",
+			"type": "string"
+		}
+	]
+}
